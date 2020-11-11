@@ -1,0 +1,22 @@
+.
+..
+.gitignore
+deserts.txt
+glaciers.txt
+islands.txt
+lakes.txt
+mountains.txt
+myDirectoryContents.txt
+newFile.txt
+oceans.txt
+volcanoes.txt
+total 72
+-rw-r--r--  1 veronicalino  staff  201 Nov 10 11:13 deserts.txt
+-rw-r--r--  1 veronicalino  staff  174 Nov 10 11:13 glaciers.txt
+-rw-r--r--  1 veronicalino  staff  130 Nov 10 11:13 islands.txt
+-rw-r--r--  1 veronicalino  staff   97 Nov 10 11:13 lakes.txt
+-rw-r--r--  1 veronicalino  staff  112 Nov 10 11:13 mountains.txt
+-rw-r--r--  1 veronicalino  staff  138 Nov 10 14:32 myDirectoryContents.txt
+-rw-r--r--  1 veronicalino  staff   12 Nov 10 14:28 newFile.txt
+-rw-r--r--  1 veronicalino  staff   69 Nov 10 11:13 oceans.txt
+-rw-r--r--  1 veronicalino  staff  192 Nov 10 11:13 volcanoes.txt
