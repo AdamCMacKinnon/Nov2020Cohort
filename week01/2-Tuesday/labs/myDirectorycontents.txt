@@ -1,0 +1,24 @@
+.
+..
+.gitignore
+deserts.txt
+glaciers.txt
+islands.txt
+lakes.txt
+mountains.txt
+myDirectorycontents.txt
+newfile.txt
+oceans.txt
+testfile.txt
+volcanoes.txt
+total 80
+-rw-r--r--  1 KermitMacFly  staff  201 Nov 10 12:37 deserts.txt
+-rw-r--r--  1 KermitMacFly  staff  174 Nov 10 12:37 glaciers.txt
+-rw-r--r--  1 KermitMacFly  staff  130 Nov 10 12:37 islands.txt
+-rw-r--r--  1 KermitMacFly  staff   97 Nov 10 12:37 lakes.txt
+-rw-r--r--  1 KermitMacFly  staff  112 Nov 10 12:37 mountains.txt
+-rw-r--r--  1 KermitMacFly  staff  151 Nov 10 15:32 myDirectorycontents.txt
+-rw-r--r--  1 KermitMacFly  staff   12 Nov 10 15:28 newfile.txt
+-rw-r--r--  1 KermitMacFly  staff   69 Nov 10 12:37 oceans.txt
+-rw-r--r--  1 KermitMacFly  staff   12 Nov 10 15:17 testfile.txt
+-rw-r--r--  1 KermitMacFly  staff  192 Nov 10 12:37 volcanoes.txt
