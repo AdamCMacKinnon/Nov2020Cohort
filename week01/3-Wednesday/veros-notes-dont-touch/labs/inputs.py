@@ -10,9 +10,3 @@
 # name in ALL CAPS, and also tell them the number of letters in their name.
 
 # (Hint: You'll want to search for documentation on how to uppercase a string.)
-
-name = input ('what is your name? ')
-print('Hello ' + str.upper(name))
-
-
-
