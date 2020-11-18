@@ -1,4 +1,4 @@
-# 1. Create a dictionary called zodiac with the following inforation.
+# 1. Create a dictionary called zodiac with the following information.
 # Each key is the name of the zodiac
 
 
@@ -27,7 +27,7 @@ phonebook_dict = {
 }
 
 
-phonebook_dict["Kareem"] = "938-489-1234"
+# phonebook_dict["Kareem"] = "938-489-1234"
 # 2a. Print Elizabeth's phone number
 # 2b. Add a entry to the dictionary: Kareem's number is 938-489-1234.
 # 2c. Delete Alice's phone entry.
@@ -68,8 +68,41 @@ ramit = {
 # >>>letter_histogram('banana')
 # {'a': 3, 'b': 1, 'n': 2}
 
+# def histogram(word):
+#     count = {}  # count['a'] = 3  count = {'b': 1, 'a': 3, 'n': 2}
+#     for letter in word:
+#         if letter not in count:
+#             count[letter] = 1
+#         else:
+#             count[letter] += 1
+#     return count
+
+
+# print(histogram("banana"))
+
+# dc 
+# narf
+
+
+# string = input('Input a word: ')
+
+def histogram(string):
+    freq = {} # {'b': 1, 'a': 2, 'n': 1}
+    for letter in string: 
+        freq[letter] = freq.get(letter, 0) + 1  # freq['a'] = 0 + 1
+    return freq
+
+
+print(histogram('banana'))
 
 # Word Summary
-# Write a word_histogram function that takes a paragraph of text as its input, and returns a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
+# Write a word_histogram function that takes a paragraph of 
+# text as its input, and returns a dictionary containing 
+# the tally of how many times each word in the alphabet was 
+# used in the text. For example:
 
-# >>> word_histogram('To be or not to
+# >>> word_histogram('To be or not to be')   ['To', 'be', 'or', 'not', 'to', 'be']
+
+# {'To': 2,
+#  'be': 1
+#  }
