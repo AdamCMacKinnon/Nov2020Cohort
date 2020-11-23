@@ -2,6 +2,10 @@
 
 # 1. Write a function called "greeting" that prints "hello world" to the console
 
+def greeting():
+    print('hello world!')
+
+greeting()
 
 # 2. Execute (call/ run) the "greeting function"
 

@@ -1,4 +1,4 @@
-# Using a while loop, print out the numbers between 1 and 10 inclusive,
+cle# Using a while loop, print out the numbers between 1 and 10 inclusive,
 # one on a line. Example output:
 
 

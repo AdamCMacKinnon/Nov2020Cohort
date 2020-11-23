@@ -2,10 +2,29 @@
 
 # 1. Create an empty class called "Student"
 
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+#     def greeting(self):
+#         return f'Good morning {self.name}'
 
-# 2. Create 5 students objects (instances of the class "Student") of "Student" types
 
 
+# # 2. Create 5 students objects (instances of the class "Student") of "Student" types
+
+# adam = Student('Adam')
+# veronica = Student('Veronica')
+# kanny = Student('Kanny')
+# joe = Student('Joe')
+# rick = Student('Rick')
+
+
+
+# print(adam.greeting())
+# print(veronica.greeting())
+# print(kanny.greeting())
+# print(joe.greeting())
+# print(rick.greeting())
 # 3a. Create a "greeting" method inside of the class "Student" class that
 # takes as a parameter "name". The return of the  method should be
 # "Good morning {name}"
@@ -26,6 +45,8 @@
 # adding a "self" in front of the printed "name" variable in the return statement
 # 6d. Refactor your Student objects by passing in the name as an argument when the
 # object gets instantiated
+
+
 
 # 7. Class Methods
 # 7a. Create a "Class" method inside of the "Student" called "campus" that returns the
@@ -59,6 +80,38 @@
 # Create a new class called Car with the following method :
 # CarDetails which prints "Here are details of this car"
 
+class Car:
+    def __init__(self, make, model, color):
+        self.make = make
+        self.model = model
+        self.color = color
+    def carDetails(self):
+        print('here are the details of this car.')
+
+
+class HybridCar(Car):
+    # def __init__(self):
+        pass
+    def carType(self):
+        print('I am a hybrid car')
+        super(HybridCar, self).carDetails()
+
+
+class ElectricCar(Car):
+    def carType(self):
+        print('I am an electric car')
+
+prius = HybridCar('Toyota', 'Prius', 'Gray')
+tesla = ElectricCar('Tesla', 'Model S', 'Marble Purple')
+
+print(prius.make)
+prius.carType()
+prius.carDetails()
+
+print(tesla.make)
+tesla.carType()
+
+
 # Create a new class called Hybrid that inherits from the Car class
 #  with the following method: CarType which prints "I am a hybrid car"
 
@@ -86,3 +139,26 @@
 # Super()
 
 # COMPOSITION
+
+
+
+
+
+
+
+# class Person:
+#     def __init__(self, name, lastName, birthdate, address, telephone, email):
+#         self.name = name
+#         self.lastName = lastName
+#         self.birthdate = birthdate
+#         self.address = address
+#         self.telphone = telephone
+#         self.email = email
+
+
+# def age():
+#     pass
+
+# michael = Person('Michael', 'Cook', '1/1/2005', '123 Sesame St', '333-333-3333', 'michael@gmail.com')
+
+# michael.age()

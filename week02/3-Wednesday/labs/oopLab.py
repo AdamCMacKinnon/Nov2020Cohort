@@ -86,3 +86,34 @@
 # Super()
 
 # COMPOSITION
+
+
+class Person:
+    def __init__(self, name, lastName, email):
+        self.name = name
+        self.lastName = lastName
+        self.email = email
+        self.friends = []
+    def print_contact_info(self):
+        for friend in self.friends:
+            print(f'{friend.name} {friend.lastName} {friend.email}')
+    def add_friend(self, friend):
+        self.friends.append(friend)
+    
+
+
+
+
+
+sonny = Person('Sonny', 'Liston', 'sonny@gmail.com')
+jordan = Person('Jordan', 'Banks', 'jordan@gmail')
+micah  = Person('Micah', 'Peterson', 'micah@gmail.com')
+
+jordan.add_friend(sonny)
+jordan.add_friend(micah)
+
+# jordan.friends.append(sonny)
+# jordan.friends.append(micah)
+
+jordan.print_contact_info()
+

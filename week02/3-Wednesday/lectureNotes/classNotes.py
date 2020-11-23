@@ -5,14 +5,26 @@ import datetime  # we will use this for date objects
 
 
 class Greeting:
+  def __init__(self, firstName, lastName, age, city): ## has to be TWO underscores on either side of init
+    self.firstName = firstName
+    self.lastName = lastName
+    self.age = age
+    self.city = city
+    self.count = 0
   def say_hello():
-    print("Hello there!")
+    print(f"Hello {self.firstName} {self.lastName}")
 
 
 class Person:
-  def __init__(self, name):
-    self.name = name
+  def __init__(self): 
+    
     self.count = 0
+  
+greet = Greeting('Adam', 'MacKinnon', 34, 'Atlanta')
+# &43567 = memory location "address"
+
+greet1 = Greeting('Matthew', 'Roberts', 21, 'Atlanta')
+# 763ww = memory location "address"
 
   def greet(self):
     self._greet()

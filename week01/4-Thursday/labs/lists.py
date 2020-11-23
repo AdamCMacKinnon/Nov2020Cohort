@@ -10,11 +10,20 @@ planet6 = "Mercury"
 planet7 = "Uranus"
 planet8 = "Venus"
 
+
+planets = ['Earth', 'Jupiter', 'Neptune', 'Mars', 'Saturn', 'Mercury', 'Uranus', 'Venus']
+
+
+# to add on to a list, planets.append('Pluto') will add 'Pluto' to the end of the list.
+
 # 2. Print out how many elements are in the planet list
 
-
+print (len(planets))
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .
+
+
+
 
 
 # 4. Add Pluto to the planet list.
@@ -25,9 +34,9 @@ planet8 = "Venus"
 # Add more cities to the Houston list.
 # Print the list cities (one city per line)
 
-HoustonCities = ["Katy", "Memorial City", "Sugar Land",
-                 "The Heights", "River Oaks", "Pasadena"]
-ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
+# HoustonCities = ["Katy", "Memorial City", "Sugar Land",
+#                  "The Heights", "River Oaks", "Pasadena"]
+# ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
 
 # 6. Since Pluto isn't really a planet, delete it from the planet list
 
@@ -51,7 +60,7 @@ ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
 
 # 13. Take the following list and multiply 5 times
 
-nums = [4, 5, 7, 8]
+# nums = [4, 5, 7, 8]
 
 # 14
 
