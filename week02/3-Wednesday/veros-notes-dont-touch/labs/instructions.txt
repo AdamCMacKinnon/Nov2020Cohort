@@ -1,0 +1,35 @@
+
+
+loop 
+    - print out list of options 
+    - what are we doing with the value 
+
+
+? data is going in my phonebook 
+- name, phone number
+
+- dictionary
+{key: value}
+
+[val1, val2, val3]
+
+? data structure do i need to store this info
+
+1. look up an entry 
+
+
+phoneBook[key] = val
+
+name = key 
+val = phoneNumber
+
+del phoneBook[key]
+
+
+{key: value, key:val, key:val}
+
+phoneBook.items()  =>  [(key: value), (), ()]
+
+
+for name, phoneNumber in phoneBook.items():
+    print(f'{key}\n{phoneNumber}')

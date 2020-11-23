@@ -1,0 +1,14 @@
+
+
+Write a word_histogram program that asks the user for a sentence as its input, and prints a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
+
+"to be or not to be"
+- function  => string
+- define dictionary
+- split function gives an list of words
+- loop through list
+- condition: if word isn't in dictionary
+    - add to the dictionary : key: word   value: 1 
+- condition: if the word is in the dictionary 
+    -  update: find existing key and increment value by 1
+ 

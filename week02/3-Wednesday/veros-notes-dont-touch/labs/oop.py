@@ -2,9 +2,30 @@
 
 # 1. Create an empty class called "Student"
 
+class Student:
+    def __init__(self, name):
+        self.name = name
+    
+    def greeting(self):
+        return f'Good morning {self.name}'
+
 
 # 2. Create 5 students objects (instances of the class "Student") of "Student" types
 
+veronica = Student("Veronica")
+zach = Student("Zach")
+ian = Student("Ian")
+kanny = Student("Kanny")
+claude = Student("Claude")
+
+print(veronica.greeting())
+print(zach.greeting())
+print(ian.greeting())
+print(claude.greeting())
+
+
+# myString = str("string 1")
+# myString2 = str("string 2")
 
 # 3a. Create a "greeting" method inside of the class "Student" class that
 # takes as a parameter "name". The return of the  method should be
@@ -59,13 +80,33 @@
 # Create a new class called Car with the following method :
 # CarDetails which prints "Here are details of this car"
 
+class Car:
+    def __init__(self, make, model, color):
+        self.make = make 
+        self.model = model 
+        self.color = color
+    
+    def carDetails(self):
+        
+        print("Here are the details of this car")
+        
 # Create a new class called Hybrid that inherits from the Car class
 #  with the following method: CarType which prints "I am a hybrid car"
 
 
+class Hybrid(Car):
+    
+    def carType(self):
+        print("I am a hybrid car")
+        
 # Create a new class called Electric that inherits from the Car class
 #  with the following  method: CarType which prints "I am a hybrid car"
 
+class Electric(Car):
+    
+    def carType(self):
+        print("I am an electric car")
+        
 # Create a Hybrid instance and an Electric instance
 # Call the method CarType on the Hybrid Instance and Electric Instance
 # Call the method Car Details on each instance
@@ -86,34 +127,3 @@
 # Super()
 
 # COMPOSITION
-
-
-class Person:
-    def __init__(self, name, lastName, email):
-        self.name = name
-        self.lastName = lastName
-        self.email = email
-        self.friends = []
-    def print_contact_info(self):
-        for friend in self.friends:
-            print(f'{friend.name} {friend.lastName} {friend.email}')
-    def add_friend(self, friend):
-        self.friends.append(friend)
-    
-
-
-
-
-
-sonny = Person('Sonny', 'Liston', 'sonny@gmail.com')
-jordan = Person('Jordan', 'Banks', 'jordan@gmail')
-micah  = Person('Micah', 'Peterson', 'micah@gmail.com')
-
-jordan.add_friend(sonny)
-jordan.add_friend(micah)
-
-# jordan.friends.append(sonny)
-# jordan.friends.append(micah)
-
-jordan.print_contact_info()
-
