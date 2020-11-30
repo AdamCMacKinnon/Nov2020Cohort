@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 50vw;
+            height: 50vh;
+            background-color: purple;
+
+        }
+
+        p{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        } */
+
+        body {
+            margin: 0px;
+        }
+
+        .container {
+
+            background-color: purple;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: rgb(217, 226, 235);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        @media screen and (max-width: 650px) {
+
+            @media screen and (max-width: 650px) {
+
+                .container {
+                    background-color: green;
+                    width: 50vw;
+                    height: 100vh;
+                }
+
+                nav {
+                    background-color: rgb(217, 226, 235);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                li {
+                    list-style: none;
+                    padding: 10px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li>Company Log</li>
+            </ul>
+
+            <ul>
+                <li>About Us</li>
+                <li>Blogs</li>
+                <li>Shopping</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
