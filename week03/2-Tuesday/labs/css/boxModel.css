@@ -1,0 +1,15 @@
+.myBox {
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    color: black;
+    border: dotted black;
+    border-bottom: solid black;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    
+}

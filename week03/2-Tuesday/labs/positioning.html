@@ -5,13 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    
+    .rel {
+        position: relative;
+        background-color: cyan;
+        left: 100px;
+        margin: 15px 0 15px 0
+        
+    }
+    .main {
+        position: relative;
+    }
+    .abs {
+        position: absolute;
+        bottom: 150px;
+        background-color: yellow;
 
+    }
+    .fixed {
+        top: 10px;
+        background-color: pink;
+
+    }
+    img {
+        position: sticky;
+        top: 30px;
+    }
+</style>
 </head>
 
 <body>
 
 
-    <div>
+    <div class="fixed">
         The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
         framers and the purpose of the document. The preamble is an introduction to the highest law of the land; it is
         not the law. It does not define government powers or individual rights.
@@ -42,24 +69,25 @@
         <img src="images/kittens3.jpg" alt="">
     </div> -->
 
-    <div id="navbar">
+    <div id="fixed">
         navbar
     </div>
-    <div class="rel">
-        The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
-        framers and the purpose of the document. The preamble is an introduction to the highest law of the land; it is
-        not the law. It does not define government powers or individual rights.
+    <div class="main"></div>
+        <div class="abs">
+            The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
+            framers and the purpose of the document. The preamble is an introduction to the highest law of the land; it is
+            not the law. It does not define government powers or individual rights.
 
-        Establish Justice is the first of five objectives outlined in the 52-word paragraph that the Framers drafted in
-        six weeks during the hot Philadelphia summer of 1787. They found a way to agree on the following basic
-        principles:
+            Establish Justice is the first of five objectives outlined in the 52-word paragraph that the Framers drafted in
+            six weeks during the hot Philadelphia summer of 1787. They found a way to agree on the following basic
+            principles:
 
-        "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic
-        Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to
-        ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
-    </div>
+            "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic
+            Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to
+            ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+        </div>
 
-    <!-- <img id="puppy" src="images/puppies2.jpg" alt=""> -->
+    <img id="puppy" src="images/puppies2.jpg" width = 200px alt="">
 
     <div>
         The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
