@@ -1,0 +1,26 @@
+
+.header{
+    height: 400px;
+    width: 100%;
+
+    background: pink;
+    overflow: hidden;
+}
+
+.top{
+    top: 0px;
+}
+
+.z10{
+    z-index: 10
+}
+.z15{
+    z-index: 15
+}
+.z20{
+    z-index: 20
+}
+
+.opactiy{
+    opacity: .7;
+}

@@ -20,7 +20,7 @@
         <!-- FLOATS -->
         <div>Float left</div>
         <br>
-        <div>Float right</div>
+        <div class="float-right">Float right</div>
         <br>
         <div>Float none</div>
         <br>
@@ -28,7 +28,7 @@
         <!-- RESPONSIVE FLOATS -->
         <div>Float right on small or wider</div>
         <br>
-        <div>Float right on medium or wider</div>
+        <div class="bg-warning float-md-right">Float right on medium or wider</div>
         <br>
         <div>Float right on large or wider</div>
         <br>
@@ -65,7 +65,35 @@
         <!-- FIXED TOP (fixed-top)-->
         <h3 >Fixed Top</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae
+        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae
             aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
             Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae
             dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius
@@ -106,7 +134,7 @@
             voluptates velit hic, tenetur cupiditate ab. Hic, unde!</p>
 
         <!-- FIXED BOTTOM (fixed-bottom)-->
-        <h3 >Fixed Bottom</h3>
+        <h3 class="fixed-bottom">Fixed Bottom</h3>
 
     </div>
     <!-- ./container -->

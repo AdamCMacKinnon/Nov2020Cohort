@@ -19,7 +19,8 @@
 
         <!-- VERTICAL ALIGNMENT (align-items-start, center, end) -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+
+            <div class="row align-items-start" style="height:200px;border:1px #333 solid">
                 <div class="col">
                     Top Aligned Text
                 </div>
@@ -31,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-items-center" style="height:200px;border:1px #333 solid">
                 <div class="col">
                     Middle Aligned Text
                 </div>
@@ -42,7 +43,7 @@
                     Middle Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-items-end" style="height:200px;border:1px #333 solid">
                 <div class="col">
                     Bottom Aligned Text
                 </div>
@@ -60,8 +61,8 @@
 
         <!-- VERTICAL ALIGN INDIVIDUAL COLS (align-self-start, center, end) -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col">
+            <div class="row align-items-center" style="height:200px;border:1px #333 solid">
+                <div class="col align-self-start">
                     Top Aligned
                 </div>
                 <div class="col">
@@ -78,7 +79,7 @@
 
         <!-- HORIZONTAL ALIGNED COLS (justify-content-start, end, center)-->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-start" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Left Aligned Text
                 </div>
@@ -86,7 +87,7 @@
                     Left Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-center" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Center Aligned Text
                 </div>
@@ -94,7 +95,7 @@
                     Center Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-end" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Right Aligned Text
                 </div>
@@ -104,7 +105,7 @@
             </div>
 
             <!-- HORIZONTAL ALIGNED COLS (justify-content-around, between)-->
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-around" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Content Around
                 </div>
@@ -112,11 +113,11 @@
                     Content Around
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
+            <div class="row justify-content-between" style="height:200px;border:1px #333 solid">
+                <div class="col-4 bg-warning">
                     Content Between
                 </div>
-                <div class="col-4">
+                <div class="col-4 bg-warning">
                     Content Between
                 </div>
             </div>
@@ -125,8 +126,8 @@
         <br>
         <br>
 
-        <!-- COLUMN WRAPPING & NO GUTTERS no-gutters, no-wrap, wrap-->
-        <div class="row">
+        <!-- COLUMN WRAPPING & NO GUTTERS no-gutters, flex-nowrap, wrap-->
+        <div class="row flex-nowrap">
             <div class="col-9">
                 <div class="card">
                     <div class="card-block">

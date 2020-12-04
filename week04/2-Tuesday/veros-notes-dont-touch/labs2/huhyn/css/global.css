@@ -1,0 +1,83 @@
+/*
+black -#000000  
+navy - #14213D
+gold - #FCA311  (accent)
+light gray - #E5E5E5 
+white = #FFFFFF
+
+
+font, backg
+*/
+
+/* background colors */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.cp-bg-black {
+  background-color: black;
+}
+
+.cp-bg-navy {
+  background-color: #14213d;
+}
+
+.cp-bg-accent {
+  background-color: #fca311;
+}
+
+.cp-bg-lightGray {
+  background-color: #e5e5e5;
+}
+
+.cp-bg-white {
+  background-color: white;
+}
+
+/* font colors */
+.cp-text-black {
+  color: black;
+}
+
+.cp-text-navy {
+  color: #14213d;
+}
+
+.cp-text-accent {
+  color: #fca311;
+}
+
+.cp-text-accent a{
+  color: #e5e5e5;
+}
+
+.cp-text-accent a:hover{
+  color: #fca311;
+  text-decoration: underline;
+}
+
+.cp-text-lightGray {
+  color: #e5e5e5; 
+}
+
+.cp-text-white {
+  color: white;
+}
+
+
+.cp-text-lightGray a{
+  color: #e5e5e5; 
+}
+
+.dark {
+  background-color:#e5e5e5;
+  width: 100%;
+  height: 400px;
+}
+
+.light {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+}

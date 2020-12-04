@@ -1,0 +1,16 @@
+
+- header 
+    - md larger - video background 
+    - sm - image
+    - title - layer 
+    - opacity - layer 
+    - video -layer
+
+- navigation
+    - bs navition 
+
+
+- main content 
+
+
+- footer
