@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .title {
+            background-color: yellow;
+        }
+
+        .titleBlue {
+            background-color: rgb(167, 167, 201);
+        }
+
+        #Veronica{
+            background-color:pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="Veronica">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum deserunt repudiandae reprehenderit ad autem
+        soluta distinctio assumenda? Deleniti amet reiciendis possimus, impedit iste repellat sint molestiae harum
+        laborum adipisci quae!
+    </div>
+
+    
+
+    <p class="title">Matt R</p>
+    <p class="title">Matt P</p>
+    <p class="title">Matt C</p>
+    <p class="title">Joe</p>
+
+    <a id="myAnchor" class="title" href="http://www.yahoo.com">Google</a>
+
+
+    <script>
+
+        // count = 0;
+
+        // count += 1
+
+        // "Matt R" + "Student"
+        //textContent
+        var names = document.getElementsByTagName('p');  //array, nodeList
+
+        for (var index = 0; index < names.length; index++) {
+
+            names[index].innerHTML += "<b>Student</b>"; //Matt R, Matt P, Matt C, Joe
+        }
+
+
+        /*
+        - loop through array
+        - resetting the attribute
+        - set attribute, class, titleBlue
+    
+        */
+
+        // var titleArr = document.getElementsByClassName('title');
+
+
+        // for (var index = 0; index < titleArr.length; index++) {
+        //     titleArr[index].setAttribute('class', 'titleBlue')
+        // }
+
+
+
+
+    </script>
+</body>
+
+</html>
