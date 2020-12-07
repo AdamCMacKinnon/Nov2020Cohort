@@ -1,6 +1,4 @@
 
-//data = [{}, {}, {},{}]
-
 var data = [
     {
         state: "New York",
