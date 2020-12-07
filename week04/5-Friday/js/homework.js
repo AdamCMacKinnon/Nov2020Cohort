@@ -64,7 +64,7 @@ div1.appendChild(p1);
 body.appendChild(div1);
 
 var h2 = document.createElement('h2');
-h2.setAttribute('style', 'text-color-primary');
+h2.setAttribute('class', 'text-primary');
 h2.textContent = 'Hello WatchKit'
 var p2 = document.createElement('p');
 p2.textContent = 'Last month Apple released the anticipated WatchKit Framework for developrs in the form of iOS 8.2 beta SDK release.  The WatchKit framework enable the developers to create Apple Watch applications.  In this article we are going to focus on the basics of getting started with the WatchKit framework and developing apps for the Apple Watch.'
@@ -82,15 +82,15 @@ row1.setAttribute('class', 'col-10 offset-1 bg-warning text-white');
 row1.textContent = '12 Comments    124 likes'
 body.appendChild(row1);
 // repeat DIV for second paragraph
-var h2nd = document.createElement('h2');
-h2nd.setAttribute('style', 'text-color-primary');
-h2nd.textContext = 'Introduction to Swift'
+var h3 = document.createElement('h3');
+h3.setAttribute('class', 'text-primary');
+h3.textContext = 'Introduction to Swift'
 var p2nd = document.createElement('p');
-p2nd.textContent = 'Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications.  Swift is a fairly new language and still in development but it cleraly reflects the intentions and the future direction.  This article will revolve around the basic concepts in the Swift language and how you can get started.'
+p2nd.textContent = 'Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications.  Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction.  This article will revolve around the basic concepts in the Swift language and how you can get started.'
 var div3 = document.createElement('div');
 div3.setAttribute('class', 'col-10 offset-1');
 div3.setAttribute('style', 'margin top: 10px;');
-div3.appendChild(h2nd);
+div3.appendChild(h3);
 div3.appendChild(p2nd);
 body.appendChild(div3);
 
