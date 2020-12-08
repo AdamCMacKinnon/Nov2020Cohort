@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Hello world
+    <script>
+
+
+        var add = function(num1, num2){
+            return num1 + num2;
+        }
+
+        var subtract = function(num1, num2){
+            return num1 - num2;
+        }
+
+        var multiply = function(num1, num2){
+            return num1 * num2
+        }
+
+        var calc = function(num1, num2, operation){
+
+            return operation(num1, num2)
+        }
+
+
+        var a = 4;
+        var b = 45;
+        var arr = [add, subtract, multiply]
+
+        for (let i= 0; i< arr.length; i++){
+
+            console.log(calc(a, b, arr[i]))
+        }
+
+        // var result = calc(a, b, subtract);
+        // console.log(result)
+
+        // var greeting = function(name){
+        //     console.log('hello ', name)
+        //     return name
+        // }
+
+
+        // console.log(greeting)
+
+
+    </script>
+</body>
+
+</html>
