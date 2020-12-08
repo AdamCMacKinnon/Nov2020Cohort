@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: cyan;
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+        }
+        p {
+            background-color: darkblue;
+            padding: 10px;
+            color: white;
+        }
+        .newclassRule{
+            background-color: lime;
+            padding: 10px;;
+        }
+    </style>
+</head>
+<body>
+    hello world 
+    <button onclick='window.alert(`Thank you for your submission!`)'>click here</button>
+    <!-- <div onmouseover="greeting()">
+        hello!
+    </div> -->
+<p style = ''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, error doloremque fugiat temporibus perferendis accusamus voluptas repellat nostrum doloribus quam sint consequatur dignissimos minus voluptatem molestiae perspiciatis ipsam saepe quos.
+
+</p>
+
+<script>
+// const greeting = () => {
+//     console.log('hello there');
+
+    
+// }
+
+let p = document.querySelector('p');
+
+// attach event listener to the element
+p.onclick = () => {
+    p.setAttribute('style', 'background-color: cyan; padding: 10px;')
+    p.setAttribute('class', 'background-color: cyan; padding: 10px;')
+}
+</script>
+
+
+</body>
+</html>
