@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div{
+        background-color: yellow;
+        padding: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    p{
+        background-color: pink;
+        padding:5px;
+    }
+
+    .newClassRule{
+        background-color:limegreen;
+        padding:5px;
+    }
+</style>
+<body>
+hello world
+
+    <button  onclick='alert("hello")'>Click Me</button>
+
+
+    <!-- <div onmouseover="greeting()">
+        Hello
+    </div> -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolores magnam eligendi autem sint error architecto a libero quas dolore voluptates, labore, nihil ratione earum veniam repellendus magni, mollitia nam?
+    </p>
+
+</body>
+
+
+<script>
+
+    const greeting = () => {
+      console.log("hello there")
+    }
+    //retrieve our element out of the dom
+
+    let p = document.querySelector('p');
+
+
+    //attach event listenter to the element 
+
+    p.onclick = ()=>{
+
+        //p.setAttribute('style', "background-color: orange;padding:5px;")
+        p.setAttribute('class', "newClassRule")
+
+    }
+
+    // set the attached element to a function
+
+
+    //alert("hello")
+
+    
+    
+</script>
+
+</html>

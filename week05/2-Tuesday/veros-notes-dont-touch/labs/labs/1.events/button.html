@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="button.js"></script>
+
+    <script>
+
+        let bodyNode = document.querySelector('body');
+
+        let button = new Button(bodyNode, "purple", "Veronica");
+
+        button.render();
+
+        let button1 = new Button(bodyNode, "yellow", "Micah");
+
+        button1.render();
+
+        let button2 = new Button(bodyNode, "lime", "Jordan");
+
+        button2.render();
+    </script>
+</body>
+</html>
