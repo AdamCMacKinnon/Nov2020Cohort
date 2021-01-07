@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script src="button.js"></script>
+
+    <script>
+        let bodyNode = document.querySelector('body');
+
+        let button = new Button(bodyNode, "cyan", "Adam")
+
+        button.render();
+        let bodyNode1 = document.querySelector('body');
+
+        let button1 = new Button(bodyNode, "yellow", "Ian")
+
+        button.render();
+        let bodyNode2 = document.querySelector('body');
+
+        let button2 = new Button(bodyNode, "lime", "Jacob")
+
+        button.render();
+    </script>
+</body>
+</html>

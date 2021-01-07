@@ -1,4 +1,4 @@
-
+c
 /* 
 Rewrite code blow using ES6 Classes
 */

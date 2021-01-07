@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var add = function (num1, num2) {
+            return num1 + num2;
+        }
+        var subtract = function (num1, num2) {
+            return num1 - num2;
+        }
+
+        var multiply = function (num1, num2) {
+            return num1 * num2;
+        }
+
+        var calc = function(num1, num2, operation) {
+            return operation(num1, num2)
+        }
+
+
+        // var result = calc(5,8, multiply);
+        // console.log(result);
+
+        var a = 4;
+        var b = 45;
+
+        var arr = [add,multiply,subtract]
+        for(let i = 0; i<arr.length; i++){
+            console.log(calc(a,b,arr[i]));
+
+        }
+    </script>
+</body>
+</html>

@@ -84,7 +84,7 @@ body.appendChild(row1);
 // repeat DIV for second paragraph
 var h3 = document.createElement('h3');
 h3.setAttribute('class', 'text-primary');
-h3.textContext = 'Introduction to Swift'
+h3.textContent = 'Introduction to Swift'
 var p2nd = document.createElement('p');
 p2nd.textContent = 'Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications.  Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction.  This article will revolve around the basic concepts in the Swift language and how you can get started.'
 var div3 = document.createElement('div');

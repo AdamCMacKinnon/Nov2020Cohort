@@ -7,7 +7,7 @@
 </head>
 <body>
   <ul>
-    <li><img src="images/ylw.gif" alt="yellow" id="yellow"></li>
+    <li><img src="images/ylw.gif"  alt="yellow" id="yellow"></li>
     <li><img src="images/org.gif" alt="orange" id="orange"></li>
     <li><img src="images/ppl.gif" alt="purple" id="purple"></li>
     <li><img src="images/blu.gif" alt="blue" id="blue"></li>
@@ -18,9 +18,41 @@
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
 
-  
+  <div id="response">
+    
+  </div>
+
   <script>
 
+
+    // retrieve ul tag
+    let ul = document.querySelector('ul');
+    let responseA = document.querySelector('#response');
+
+    //attach el to ul tag
+    ul.addEventListener('click',(e) => {
+      // console.log(e.target.id);
+
+      response.textContent = `You've selected the ${e.target.id} image`;
+    })
+
+    // retrieve response div
+    
+    
+    
+    // choose an image
+
+    // let pink = document.querySelector('#pink');
+    // let response = document.querySelector('#response');
+    // //when image clicks on image 
+
+    // pink.addEventListener('click', () => {
+      
+    //   response.textContent = "You've clicked on the pink image"
+
+    // });
+
+    // alert (name of the color)
     
   </script>
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+    <script>
+        var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+        var newDaysArr = days.map(function(day){
+            return `<li>${day}</li>`
+        })
+
+        console.log(newDaysArr);
+
+        console.log(newDaysArr.join(''));
+
+        var ulNode = document.querySelector('ul');
+        ulNode.innerHTML = newDaysArr.join('');
+
+    </script>
+</body>
+</html>

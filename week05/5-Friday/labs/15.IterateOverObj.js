@@ -5,6 +5,8 @@ number.
 Ensure that iteration is done only over own properties of the object
 */
 
+//typeof( ==="number")
+
 var nums = {
     a: 10,
     b: 20,
@@ -13,6 +15,11 @@ var nums = {
 }
 
 // Write code here 
+
+
+}
+
+
 
 console.log(sumObjectValues(nums));
 // 42

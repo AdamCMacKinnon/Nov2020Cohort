@@ -1,3 +1,10 @@
+// loop through and create a block of code for each state
+// display state name, cases, deaths per state
+// append  the card HTML row to the row container
+
+
+
+
 
 var data = [
     {

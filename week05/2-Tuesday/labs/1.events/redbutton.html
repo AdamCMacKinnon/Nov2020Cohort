@@ -38,7 +38,32 @@
         </div>
     </div>
 
+<script>
 
+    let count = 0;
+    let bigRedButton = document.querySelector('#big-red-button');
+    let countDiv = document.querySelector('#count');
+    bigRedButton.addEventListener('click', ()=>{
+
+        count ++;
+        countDiv.textContent = count;
+    })
+
+
+    // // retrieve element from DOM (use Query Selector)
+    // let bigRedButton = document.querySelector('#big-red-button');
+    // // attach onclick event listener
+    // let clickCount = 0
+    // let countDiv = document.querySelector('#count');
+    // bigRedButton.onclick = ()=>{
+
+    //     clickCount++;
+    //     countDiv.texContent = clickCount.toString();
+    // }
+
+
+
+</script>
     
 </body>
 </html>
