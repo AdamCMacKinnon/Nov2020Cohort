@@ -5,7 +5,7 @@
     <title>Roux Meetups</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
     
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -82,6 +82,7 @@
                             <li>Those interested in meeting and making a connection with others in the local art scene.
                             </li>
                         </ul>
+                        
                     </article><!-- article -->
 
                 </div>
@@ -97,6 +98,10 @@
                 </article><!-- article -->
             </aside><!-- secondary -->
             <aside class="col-sm-4">
+                <% photos.forEach(photo => { %>
+                             
+                    <img src="images/artwork/<%= photo %> " alt="">
+                <% }) %>
                 <div class="pixgrid">
                     <!-- /images/artwork/Lorenzo_Garcia_01_tn.jpg -->
                     
