@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../models/database');
+const todoModel = require('../models/todos');
 router.use(express.json());
 router.use(express.urlencoded({extended: false}));
 
@@ -13,18 +14,13 @@ router.get('/', (req,res) => {
 
 
 router.get('/api', (req, res) => {
-    //return all of the current todos
-    //1 2 3 4 5   5, 4, 3, 2, 1
-    db.query("SELECT * FROM todos ORDER BY id DESC")
-    .then(results =>{
-        //[{} {} {}]
-
-        res.json(results)
-    })
-    .catch(error =>{
-
-        res.status(404).send('error');
-    })
+    try{
+    let records = await todoModel.getAllTodos()
+    res.json(records)
+    }
+    catch(error){
+        res.send(error);
+    }
     
 })
 

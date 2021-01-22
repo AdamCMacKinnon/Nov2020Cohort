@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  method="POST">
+    <input type="text" name="myName">
+
+    <input type="submit">
+    
+    </form>
+
+    <div id="info">
+
+    </div>
+    <script>
+        let form = document.querySelector('form')
+        form.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            fetch('/', {
+                method: 'POST',
+                header: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    firstName: ,
+                    lastName: 
+                })
+            })
+        })
+    </script>
+</body>
+</html>

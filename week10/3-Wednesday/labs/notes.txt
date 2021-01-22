@@ -1,0 +1,20 @@
+author:
+- firstName
+- lastName
+- imageURL
+- email 
+
+blogs 
+- id
+- Title 
+- body 
+- isPublished
+- publishDate
+
+
+3 pages:
+- front page (links to articles)
+- article page (actual article)
+- draft page (where articles are written)
+
+
