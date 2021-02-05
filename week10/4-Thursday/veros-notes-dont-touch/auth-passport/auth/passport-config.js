@@ -1,17 +1,18 @@
 
-
 const LocalStrategy = require('passport-local').Strategy
 const bcrypt = require('bcryptjs');
 const db = require('../models');
-// const passport = require('./passport-instance');
 
 //req.body.username 
 //req.body.password
+
 
 const init = (passport) => {
 
     passport.use( new LocalStrategy((username, password, done) =>{
         
+        console.log(`inside passport.use: username ${username}, password: ${password}`);
+        //database call
         db.users.findAll({where: {username: username}})
         .then(records =>{
             //[{}]
@@ -25,7 +26,7 @@ const init = (passport) => {
                             //this means a match, user with correct password 
                             console.log('passwords matched');
                             //serialize user gets called here
-                           
+
                             
                             done(null, { id: record.id, username: record.username })
                         }
@@ -48,22 +49,24 @@ const init = (passport) => {
 
     passport.serializeUser((user, done) =>{
         //passport adding information to the sessions
+        // 43
         console.log(`serializing user`)
         done(null, user.id)
 
     })
 
     passport.deserializeUser((id, done)=>{
-        //checking to see if user is valid with the cookie that was passed from request 
+        //checking to see if user is valid with the 
+        //cookie that was passed from request 
 
-        // 5, 7
+        // id is coming from the session
 
+        console.log('deserializing user');
         db.users.findByPk(id)
         .then(record =>{
             done(null, record)
         })
     })
-
 }
 
 
